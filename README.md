@@ -1,10 +1,10 @@
-# AntigravityTurkiyeMonitor 🇹🇷
+# TurkiyeMonitor 🇹🇷
 
 A powerful CLI tool to monitor Turkiye's agenda in real-time. Get economic data, news, social trends, earthquakes, and more — all from your terminal.
 
 <img src="screenshot.png" alt="Screenshot" width="50%">
 
-[![GitHub](https://img.shields.io/badge/GitHub-bariskisir-black?logo=github)](https://github.com/bariskisir/AntigravityTurkiyeMonitor)
+[![GitHub](https://img.shields.io/badge/GitHub-bariskisir-black?logo=github)](https://github.com/bariskisir/TurkiyeMonitor)
 [![NPM](https://img.shields.io/badge/NPM-antigravityturkiyemonitor-red?logo=npm)](https://www.npmjs.com/package/antigravityturkiyemonitor)
 
 
