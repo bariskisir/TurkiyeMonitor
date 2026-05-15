@@ -1,26 +1,26 @@
 # TurkiyeMonitor 🇹🇷
 
-A powerful CLI tool to monitor Turkiye's agenda in real-time. Get economic data, news, social trends, earthquakes, and more — all from your terminal.
+A professional CLI tool for monitoring Turkiye's agenda in real time. Get economic data, news, social trends, earthquakes, weather, and market snapshots from your terminal.
 
 <img src="screenshot.png" alt="Screenshot" width="50%">
 
 [![GitHub](https://img.shields.io/badge/GitHub-bariskisir-black?logo=github)](https://github.com/bariskisir/TurkiyeMonitor)
-[![NPM](https://img.shields.io/badge/NPM-antigravityturkiyemonitor-red?logo=npm)](https://www.npmjs.com/package/antigravityturkiyemonitor)
+[![NPM](https://img.shields.io/badge/NPM-turkiyemonitor-red?logo=npm)](https://www.npmjs.com/package/turkiyemonitor)
 
 
 ## Installation
 
 ```bash
-npm install -g antigravityturkiyemonitor
+npm install -g turkiyemonitor
 ```
 
 
 ## Usage
 
 ```bash
-trmonitor
-trmonitor --lang tr
-trmonitor --lang en
+turkiyemonitor
+turkiyemonitor --lang tr
+turkiyemonitor --lang en
 ```
 
 | Option | Description | Default |

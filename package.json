@@ -1,14 +1,17 @@
 {
-  "name": "antigravityturkiyemonitor",
-  "version": "1.0.4",
-  "description": "A powerful CLI tool to monitor Turkiye agenda in real-time.",
-  "main": "src/index.js",
+  "name": "turkiyemonitor",
+  "version": "1.1.0",
+  "description": "A professional CLI tool for monitoring Turkiye agenda data in real time.",
+  "main": "dist/cli.js",
+  "types": "dist/cli.d.ts",
   "type": "module",
   "bin": {
-    "trmonitor": "./src/index.js"
+    "turkiyemonitor": "./dist/cli.js"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/cli.js",
+    "prepack": "npm run build"
   },
   "keywords": [
     "turkiye",
@@ -17,20 +20,20 @@
     "news",
     "economy",
     "trends",
-    "antigravity"
+    "monitor"
   ],
   "author": "bariskisir",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bariskisir/AntigravityTurkiyeMonitor.git"
+    "url": "git+https://github.com/bariskisir/turkiyemonitor.git"
   },
   "bugs": {
-    "url": "https://github.com/bariskisir/AntigravityTurkiyeMonitor/issues"
+    "url": "https://github.com/bariskisir/turkiyemonitor/issues"
   },
-  "homepage": "https://github.com/bariskisir/AntigravityTurkiyeMonitor#readme",
+  "homepage": "https://github.com/bariskisir/turkiyemonitor#readme",
   "dependencies": {
-    "axios": "^1.7.0",
+    "axios": "1.15.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0",
     "cli-progress": "^3.12.0",
@@ -39,11 +42,25 @@
     "puppeteer": "^24.37.5",
     "xml2js": "^0.6.2"
   },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/node": "^24.10.1",
+    "@types/xml2js": "^0.4.14",
+    "typescript": "^5.9.3"
+  },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
+  },
+  "overrides": {
+    "basic-ftp": "5.3.1",
+    "follow-redirects": "1.16.0",
+    "ip-address": "10.2.0",
+    "undici": "7.24.1"
   },
   "files": [
-    "src/**/*",
-    "README.md"
+    "dist",
+    "README.md",
+    "LICENSE",
+    "screenshot.png"
   ]
 }

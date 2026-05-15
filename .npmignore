@@ -1,4 +1,9 @@
 .git
+.github
 node_modules
+src
+scripts
+*.tsbuildinfo
+log.txt
 temp.txt
-.npmignore
+tsconfig.json
